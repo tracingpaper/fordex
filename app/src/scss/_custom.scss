@@ -1,0 +1,101 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.text-medium {
+    font-weight: 500;
+}
+
+.dark-divider {
+    background: $dark;
+    width: 75%;
+    height: 3px;
+    margin: $base-margin-vertical 0;
+}
+
+.hero {
+    flex: 1;
+    background: $dark;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+    .uk-heading {
+        font-size: 2rem;
+        color: #dadada;
+    }
+
+    .hero-image {
+        
+        position: relative;
+
+        #laptop-image {
+            width: 90%;
+
+            @media screen and (min-width: $breakpoint-medium) {
+                width: 80%;
+                transform: translateX(-60px)
+            }
+        }
+
+    }
+
+    #graph-image {
+        position: absolute;
+        bottom: -20px;
+        right: 25%;
+    }
+}
+
+.button-gradient {
+    background-image: linear-gradient(to bottom left, #F5833F, #E92C82);
+    color: $light;
+
+    &:hover {
+        color: $light;
+    }
+}
+
+#coming-soon {
+
+    position: relative;
+
+    #coming-soon-images {
+        position: relative;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            position: static;
+
+            #trezor-image {
+                position: absolute;
+                bottom: -4px;
+            }
+    
+            #ledger-image {
+                position: relative;
+                left: 25%;
+            }
+        }
+        
+    }
+
+    
+    
+}
+
+.footer {
+
+    .social {
+        font-size: 1.2rem;
+
+        .social-link {
+            margin: 0 1rem 0 0 ;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

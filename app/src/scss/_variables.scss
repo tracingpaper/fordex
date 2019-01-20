@@ -9,17 +9,19 @@
 */
 
 // COLORS //
-$primary:   #34D18E;
-$secondary: #0B172A;
+$primary:   #59E7B7;
+$secondary: #1D1D33;
 
 $success:   #8bc34a;
 $warning:   #ffc107;
 $danger :   #f44336;
-$muted  :   #f8f8f8;
+$muted  :   #EBEBEB;
 
-$dark   :   #2e2e2e;
-$gray   :   #666;
-$light  :   #f4f4f4;
+$dark   :   #090327;
+$gray   :   #8F8F8F;
+$light  :   #FFFFFF;
+
+$border-radius: 0.15rem;
 
 // OVERRIDES //
 $global-primary-background: $primary;
@@ -34,11 +36,26 @@ $global-link-color: $primary;
 $base-link-hover-text-decoration: none;
 
 $global-color: $gray;
-$global-emphasis-color: $dark;
+$global-emphasis-color: $secondary;
 $global-inverse-color: $light;
 
-$global-font-family: 'Poppins', 'Roboto', sans-serif;
+$global-font-family: 'nowayregular','Quicksand', 'Roboto', sans-serif;
 $global-font-size: 15px;
+// $text-lead-font-size: 2rem;
 // => Add your own theming variables below //
+
+//button
+
+$button-primary-color: $secondary;
+$button-primary-hover-background: darken($primary, 20%) !default;
+$button-primary-hover-color: $secondary;
+
+$inverse-button-primary-background: $global-primary-background;
+$inverse-button-primary-color: $button-primary-color;
+$inverse-button-primary-hover-color: $button-primary-hover-color;
+$inverse-button-primary-hover-background: $button-primary-hover-background;
+
+//form
+$inverse-form-background: $dark;
 
 // (x) Donot write custom styling here //

@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="A static sitebuilder framework built from gulp, nunjucks, browserify, sass and UIKit">
-    <meta name="keywords" content="tracing paper, jigsaw,design,logo,print,graphic,web design,web development">
+    <meta name="description" content="Trade Stablecoins Trustlessly">
+    <meta name="keywords" content="fordex, stablecoins, trade">
     <!-- Open Graph -->
-    <meta property="og:title" content="Mosaic">
+    <meta property="og:title" content="Fordex">
     <meta name="og:type" content="website">
     <meta name="og:url" content="localhost:4000">
     <meta name="og:image" content="/assets/images/logo.svg">
 
     <!-- Recommended -->
-    <meta property="og:site_name" content="Mosaic">
-    <meta name="twitter:image:alt" content="Mosaic">
+    <meta property="og:site_name" content="Fordex">
+    <meta name="twitter:image:alt" content="Fordex">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +22,7 @@
     <!-- Robots -->
     <meta name="robots" content="index, follow">
 
-    <title>Mosaic</title>
+    <title>Fordex</title>
 
     <!-- FontAwesom -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
@@ -38,100 +38,175 @@
 
     
 
-    <div class="uk-flex uk-flex-column vh-100">
+    <div class="uk-flex uk-flex-column uk-height-viewport">
 
-        
-        
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
-    <div class="uk-navbar-left">
-        <a href="localhost:4000" class="uk-navbar-item">
-            <img src="/assets/images/logo.svg" alt="Mosaic" width="32px" uk-img>
-        </a>
-        <a href="localhost:4000" class="uk-navbar-item uk-logo uk-text-secondary uk-visible@m">
-            Mosaic
-        </a>
-
-    </div>
-
-    <div class="uk-navbar-right">
-
-        <ul class="uk-navbar-nav">
-            <li class="uk-active">
-                <a href="#">Home</a>
-            </li>
-            <li class="">
-                <a href="#">About</a>
-            </li>
-            <li class="">
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-        
-    </div>
-</nav>
-
-        <div class="uk-container uk-margin-auto-vertical uk-text-center">
-            
-            <div class="uk-heading-hero">Welcome!</div>
-            <div class="uk-margin-medium-top">
-                <div class="uk-text-lead uk-text-muted">This is a starter page setup for your Jigsaw project. Start editing <span class="uk-text-primary">index.njk</span> to get started.</div>
+        <div class="uk-section uk-section-secondary uk-padding-remove">
+    <div class="uk-container">
+        <nav class="uk-navbar-container uk-navbar-transparent" id="navbar" uk-navbar="mode: click">
+            <div class="uk-navbar-left">
+                <a href="localhost:4000" class="uk-navbar-item">
+                    <img src="/assets/images/logo.svg" alt="Fordex" uk-img>
+                </a>
             </div>
-            
-            <div class="uk-margin-large-top">
-                <a href="https://github.com/tracingpaper/mosaic" class="uk-button uk-button-primary uk-button-large"><i uk-icon="icon: github" class="uk-margin-right"></i> View in Github</a>
-            </div>
+        </nav>
+    </div>
+</div>
 
+        <div class="uk-section hero">
+            <img src="assets/images/graph.png" alt="graph" id="graph-image">
+            <div class="uk-margin-auto-vertical uk-width-1-1">
+
+                <div class="uk-container">
+                    <div class="uk-grid-collapse uk-margin-auto-vertical uk-flex-middle uk-text-center" uk-grid>
+
+                        <div class="hero-image uk-width-1-1 uk-width-1-2@m uk-margin-medium-bottom uk-margin-remove-bottom@m">
+                            <img src="assets/images/laptop.png" id="laptop-image" alt="laptop">
+                        </div>
+
+                        <div class="uk-width-1-1 uk-width-1-2@m uk-flex-first@m uk-text-left@m">
+                            <img src="/assets/images/logo.svg" alt="Fordex" width="148">
+                            <h2 class="uk-heading uk-margin-small-top">
+                                Trade Stablecoins Trustlessly
+                            </h2>
+                            <a class="uk-button uk-button-primary uk-margin-medium-top">OPEN APP</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div class="uk-section uk-section-muted">
+        <div class="uk-section uk-section-secondary uk-padding-medium">
             <div class="uk-container">
-                <div uk-grid>
+                <div class="uk-flex-middle uk-text-center" uk-grid>
 
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://mozilla.github.io/nunjucks/getting-started.html" class="uk-link-muted uk-padding-small">
-                            <i class="fa fa-book"></i>  Read Nunjucks Docs
-                        </a>
+                    <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-around uk-width-1-2@m">
+                        <img src="assets/images/usd_coin.png" alt="USDC">
+                        <img src="assets/images/paxo.png" alt="PAXOS">
+                        <img src="assets/images/dai.png" alt="DAI">
                     </div>
 
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://sass-lang.com/guide" class="uk-link-muted uk-padding-small">
-                            <i class="fab fa-sass"></i>  Read Sass Docs
-                        </a>
-                    </div>
-
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://getuikit.com/docs/" class="uk-link-muted uk-padding-small">
-                            <i class="fab fa-uikit"></i>  Read UIKit Docs
-                        </a>
+                    <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m uk-flex-first@m">
+                        <h2 class="uk-heading">
+                            Largest selection of stablecoins 
+                        </h2>
+                        <p class="uk-text-large uk-text-muted">
+                            USDC, PAX, DAI 
+                        </p>
                     </div>
 
                 </div>
             </div>
         </div>
+    
+    </div>
 
-        <div class="footer uk-section uk-padding-small uk-text-small">
-    <div uk-grid>
-        <div class="uk-text-center uk-text-left@m uk-width-1-1 uk-width-1-3@m">
-            Copyright 2018 &copy; Tracing Paper. All rights reserved
+    <!-- Currencies -->
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="uk-flex-middle uk-text-center" uk-grid>
+
+                <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-width-1-2@m uk-text-left@m">
+                    <img src="assets/images/currency_icons.png" alt="Currencies" width="40%">
+                </div>
+
+                <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
+                    <h2 class="uk-heading text-medium">Stablecoins in various currencies</h2>
+                    <p class="uk-text-large">USD, Korean Won, SGD and so on</p>
+                    <a href="#" class="uk-button button-gradient">Know More</a>
+                </div>
+
+            </div>
         </div>
-        <div class="uk-text-center uk-width-1-1 uk-width-1-3@m">
-            Hand Crafted with <span class="uk-text-danger"><i class="fa fa-heart"></i></span> by <a class="uk-link-muted" href="https://www.instagram.com/tracingpaperofficial">Tracing Paper</a>
+    </div>
+
+    <!-- Wallet -->
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <div class="uk-flex-middle uk-text-center" uk-grid>
+
+                <div class="uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-width-1-2@m uk-flex-last@m uk-text-right@m">
+                    <img src="assets/images/metamask_wallet.png" alt="Metamask Wallet" height="80%">
+                </div>
+
+                <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
+                    <h2 class="uk-heading text-medium">Trade directly from your wallet</h2>
+                    <p class="uk-text-large">Text Content Goes here for the heading aside </p>
+                </div>
+
+            </div>
         </div>
-        <div class="uk-text-center uk-text-right@m uk-width-1-1 uk-width-1-3@m">
-            <a href="https://www.facebook.com/tracingpaperofficial" class="uk-link-muted uk-padding-small">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.facebook.com/tracingpaperz" class="uk-link-muted uk-padding-small">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.facebook.com/tracingpaperofficial" class="uk-link-muted uk-padding-small">
-                <i class="fab fa-instagram"></i>
-            </a>
+    </div>
+
+    <!-- Coming Soon! -->
+
+    <div class="uk-section" id="coming-soon">
+        <div class="uk-container">
+            <div class="uk-flex-middle uk-text-center" uk-grid>
+
+                <div id="coming-soon-images" class=" uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-flex-left@m uk-width-1-2@m uk-text-left@m">
+                    <img src="assets/images/trezor_image.png" id="trezor-image" alt="Trezor">
+                    <img src="assets/images/ledger.png" id="ledger-image" alt="Ledger">
+                </div>
+
+                <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
+                    <h2 class="uk-heading text-medium">Coming soon</h2>
+                    <p class="uk-text-large">Ledger and Trezor Integration <br> Leveraged Trading and Shorting</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer uk-section uk-padding uk-section-secondary uk-text-small">
+    <div class="uk-container">
+        <div class="uk-text-center uk-grid-medium" uk-grid>
+
+            <div class="uk-width-1-2 uk-width-1-5@m uk-text-left">
+                <img src="assets/images/logo.svg" alt="Fordex" width="50%">
+                <div class="dark-divider"></div>
+                <div class="uk-flex uk-flex-middle">
+                    <img src="assets/images/ox_build.png" alt="OX" style="width:25px; height:25px">
+                    <span class="uk-text-lead@m uk-margin-small-left">Built on Ox</span>
+                </div>
+            </div>
+            <div class="uk-width-1-2 uk-width-1-5@m uk-text-right uk-text-left@m">
+                <ul id="footer-link-list" class="uk-list">
+                    <li><a href="#" class="uk-link-muted">Open App</a></li>
+                    <li><a href="#" class="uk-link-muted">Link 01</a></li>
+                    <li><a href="#" class="uk-link-muted">Documentation Link</a></li>
+                </ul>
+            </div>
+            <div class="uk-width-1-1 uk-width-2-5@m uk-text-left@m">
+                <h5 class="uk-heading uk-text-muted">SignUp For Our News Letter</h5>
+                <form action="#" id="subscription-form" class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-1 uk-width-3-4@m">
+                        <div class="uk-inline uk-width-1-1">
+                            <i class="fa fa-envelope uk-form-icon"></i>
+                            <input type="email" class="uk-input uk-form-small " name="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    
+                    <div class="uk-width-1-1 uk-width-1-4@m">
+                        <button class="uk-button uk-button-small uk-button-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="uk-width-1-1 uk-width-1-5@m uk-text-left@m">
+                <h5 class="uk-heading uk-text-muted">Send Us A Signal</h5>
+                <div class="social">
+                    <a href="#" class="social-link"><i class="fas fa-paper-plane"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-medium-m"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-    
-    </div>
+<div class="uk-section uk-section-secondary uk-text-center uk-text-small uk-padding-small uk-text-muted">
+    &copy;Copyright Fordex | 2019
+</div>
 
     
     <!-- Scripts -->

@@ -1,8 +1,8 @@
 {
     "app": {
-        "title": "Mosaic",
-        "description": "A static sitebuilder framework built from gulp, nunjucks, browserify, sass and UIKit",
-        "keywords": "tracing paper, jigsaw,design,logo,print,graphic,web design,web development",
+        "title": "Fordex",
+        "description": "Trade Stablecoins Trustlessly",
+        "keywords": "fordex, stablecoins, trade",
         "url": "localhost:4000",
         "logo": "/assets/images/logo.svg",
         "icon": "/assets/icons/icon@192.png",
