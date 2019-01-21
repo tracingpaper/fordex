@@ -18,7 +18,8 @@ try {
 
     AOS.init({
         duration: 600,
-        offset: 0
+        offset: 0,
+        disable: 'mobile'
     });
 }
 catch(e) { console.log(e) }
