@@ -11,6 +11,17 @@ try {
 }
 catch(e) {}
 
+//AOS
+try {
+
+    window.AOS = require('AOS');
+
+    AOS.init({
+        duration: 600,
+        offset: 0
+    });
+}
+catch(e) {}
 
 //UIKit
 try {

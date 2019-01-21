@@ -28,11 +28,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+    <!-- Noway Font -->
+    <link rel="stylesheet" href="/assets/fonts/noway/stylesheet.css">
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/assets/manifest.json">
 </head>
 <body>
 
@@ -53,10 +59,10 @@
 </div>
 
         <div class="uk-section hero">
-            <img src="assets/images/graph.png" alt="graph" id="graph-image">
+            <img src="assets/images/graph.png" alt="graph" id="graph-image" uk-parallax="y:0,100">
             <div class="uk-margin-auto-vertical uk-width-1-1">
 
-                <div class="uk-container">
+                <div class="uk-container" uk-parallax="y:0,-50; opacity: 1,0.5">
                     <div class="uk-grid-collapse uk-margin-auto-vertical uk-flex-middle uk-text-center" uk-grid>
 
                         <div class="hero-image uk-width-1-1 uk-width-1-2@m uk-margin-medium-bottom uk-margin-remove-bottom@m">
@@ -64,11 +70,13 @@
                         </div>
 
                         <div class="uk-width-1-1 uk-width-1-2@m uk-flex-first@m uk-text-left@m">
-                            <img src="/assets/images/logo.svg" alt="Fordex" width="148">
-                            <h2 class="uk-heading uk-margin-small-top">
+                            <img src="/assets/images/logo.svg" alt="Fordex" width="148"  data-aos="fade-right">
+                            <h2 class="uk-heading uk-margin-small-top"  data-aos="fade-right" data-aos-delay="100">
                                 Trade Stablecoins Trustlessly
                             </h2>
-                            <a class="uk-button uk-button-primary uk-margin-medium-top">OPEN APP</a>
+                            <div class="uk-margin-medium-top" data-aos="fade-up" data-aos-delay="400">
+                                <a class="uk-button uk-button-primary">OPEN APP</a>                            
+                            </div>
                         </div>
 
                     </div>
@@ -77,21 +85,22 @@
             </div>
         </div>
 
+        <!-- Selection -->
         <div class="uk-section uk-section-secondary uk-padding-medium">
             <div class="uk-container">
                 <div class="uk-flex-middle uk-text-center" uk-grid>
 
                     <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-around uk-width-1-2@m">
-                        <img src="assets/images/usd_coin.png" alt="USDC">
-                        <img src="assets/images/paxo.png" alt="PAXOS">
-                        <img src="assets/images/dai.png" alt="DAI">
+                        <img src="assets/images/usd_coin.png" alt="USDC" data-aos="flip-left" data-aos-delay="800">
+                        <img src="assets/images/paxo.png" alt="PAXOS" data-aos="flip-left" data-aos-delay="900">
+                        <img src="assets/images/dai.png" alt="DAI" data-aos="flip-left" data-aos-delay="1000">
                     </div>
 
                     <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m uk-flex-first@m">
-                        <h2 class="uk-heading">
+                        <h2 class="uk-heading" data-aos="fade-up" data-aos-delay="600">
                             Largest selection of stablecoins 
                         </h2>
-                        <p class="uk-text-large uk-text-muted">
+                        <p class="uk-text-large uk-text-muted" data-aos="fade-up" data-aos-delay="650" data-aos-offset="0">
                             USDC, PAX, DAI 
                         </p>
                     </div>
@@ -108,13 +117,15 @@
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
                 <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-width-1-2@m uk-text-left@m">
-                    <img src="assets/images/currency_icons.png" alt="Currencies" width="40%">
+                    <img src="assets/images/currency_icons.png" alt="Currencies" width="40%" data-aos="flip-right">
                 </div>
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium">Stablecoins in various currencies</h2>
-                    <p class="uk-text-large">USD, Korean Won, SGD and so on</p>
-                    <a href="#" class="uk-button button-gradient">Know More</a>
+                    <h2 class="uk-heading text-medium" data-aos="fade-left">Stablecoins in various currencies</h2>
+                    <p class="uk-text-large" data-aos="fade-left" data-aos-delay="50">USD, Korean Won, SGD and so on</p>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <a href="#" class="uk-button button-gradient">Know More</a>
+                    </div>
                 </div>
 
             </div>
@@ -127,12 +138,12 @@
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
                 <div class="uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-width-1-2@m uk-flex-last@m uk-text-right@m">
-                    <img src="assets/images/metamask_wallet.png" alt="Metamask Wallet" height="80%">
+                    <img src="assets/images/metamask_wallet.png" alt="Metamask Wallet" height="80%" data-aos="zoom-in">
                 </div>
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium">Trade directly from your wallet</h2>
-                    <p class="uk-text-large">Text Content Goes here for the heading aside </p>
+                    <h2 class="uk-heading text-medium" data-aos="fade-right">Trade directly from your wallet</h2>
+                    <p class="uk-text-large" data-aos="fade-right" data-aos-delay="50">Text Content Goes here for the heading aside </p>
                 </div>
 
             </div>
@@ -146,13 +157,16 @@
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
                 <div id="coming-soon-images" class=" uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-flex-left@m uk-width-1-2@m uk-text-left@m">
-                    <img src="assets/images/trezor_image.png" id="trezor-image" alt="Trezor">
-                    <img src="assets/images/ledger.png" id="ledger-image" alt="Ledger">
+                    <img src="assets/images/trezor_image.png" id="trezor-image" alt="Trezor" data-aos="fade-up">
+                    <img src="assets/images/ledger.png" id="ledger-image" alt="Ledger" data-aos="fade-up" data-aos-delay="150">
                 </div>
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium">Coming soon</h2>
-                    <p class="uk-text-large">Ledger and Trezor Integration <br> Leveraged Trading and Shorting</p>
+                    <h2 class="uk-heading text-medium" data-aos="fade-left">Coming soon</h2>
+                    <p class="uk-text-large">
+                        <div class="uk-text-large" data-aos="fade-left" data-aos-delay="50">Ledger and Trezor Integration</div>
+                        <div class="uk-text-large" data-aos="fade-left" data-aos-delay="100">Leveraged Trading and Shorting</div>
+                    </p>
                 </div>
 
             </div>
@@ -164,40 +178,40 @@
         <div class="uk-text-center uk-grid-medium" uk-grid>
 
             <div class="uk-width-1-2 uk-width-1-5@m uk-text-left">
-                <img src="assets/images/logo.svg" alt="Fordex" width="50%">
+                <img src="assets/images/logo.svg" alt="Fordex" width="50%" data-aos="flip-up">
                 <div class="dark-divider"></div>
                 <div class="uk-flex uk-flex-middle">
-                    <img src="assets/images/ox_build.png" alt="OX" style="width:25px; height:25px">
-                    <span class="uk-text-lead@m uk-margin-small-left">Built on Ox</span>
+                    <img src="assets/images/ox_build.png" alt="OX" style="width:25px; height:25px" data-aos="fade-right">
+                    <span class="uk-text-lead@m uk-margin-small-left"  data-aos="fade-right"  data-aos-delay="100">Built on Ox</span>
                 </div>
             </div>
             <div class="uk-width-1-2 uk-width-1-5@m uk-text-right uk-text-left@m">
                 <ul id="footer-link-list" class="uk-list">
-                    <li><a href="#" class="uk-link-muted">Open App</a></li>
-                    <li><a href="#" class="uk-link-muted">Link 01</a></li>
-                    <li><a href="#" class="uk-link-muted">Documentation Link</a></li>
+                    <li data-aos="fade-right" data-aos-offset="0"><a href="#" class="uk-link-muted">Open App</a></li>
+                    <li data-aos="fade-right" data-aos-delay="50"><a href="#" class="uk-link-muted">Link 01</a></li>
+                    <li data-aos="fade-right" data-aos-delay="100"><a href="#" class="uk-link-muted">Documentation Link</a></li>
                 </ul>
             </div>
             <div class="uk-width-1-1 uk-width-2-5@m uk-text-left@m">
-                <h5 class="uk-heading uk-text-muted">SignUp For Our News Letter</h5>
+                <h5 class="uk-heading uk-text-muted" data-aos="fade-up">SignUp For Our News Letter</h5>
                 <form action="#" id="subscription-form" class="uk-grid-small" uk-grid>
-                    <div class="uk-width-1-1 uk-width-3-4@m">
+                    <div class="uk-width-1-1 uk-width-3-4@m" data-aos="fade-up" data-aos-delay="200">
                         <div class="uk-inline uk-width-1-1">
                             <i class="fa fa-envelope uk-form-icon"></i>
                             <input type="email" class="uk-input uk-form-small " name="email" placeholder="Your Email">
                         </div>
                     </div>
                     
-                    <div class="uk-width-1-1 uk-width-1-4@m">
+                    <div class="uk-width-1-1 uk-width-1-4@m" data-aos="fade-up" data-aos-delay="250">
                         <button class="uk-button uk-button-small uk-button-primary">Submit</button>
                     </div>
                 </form>
             </div>
             <div class="uk-width-1-1 uk-width-1-5@m uk-text-left@m">
-                <h5 class="uk-heading uk-text-muted">Send Us A Signal</h5>
-                <div class="social">
+                <h5 class="uk-heading uk-text-muted" data-aos="fade-up" data-aos-delay="500">Send Us A Signal</h5>
+                <div class="social" data-aos="zoom-in-up" data-aos-delay="550">
                     <a href="#" class="social-link"><i class="fas fa-paper-plane"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" ><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-medium-m"></i></a>
                 </div>
             </div>
@@ -210,6 +224,6 @@
 
     
     <!-- Scripts -->
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>

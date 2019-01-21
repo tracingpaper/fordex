@@ -7,10 +7,10 @@
         {% include "partials/navbar.partial.njk" %}
 
         <div class="uk-section hero">
-            <img src="assets/images/graph.png" alt="graph" id="graph-image">
+            <img src="assets/images/graph.png" alt="graph" id="graph-image" uk-parallax="y:0,100">
             <div class="uk-margin-auto-vertical uk-width-1-1">
 
-                <div class="uk-container">
+                <div class="uk-container" uk-parallax="y:0,-50; opacity: 1,0.5">
                     <div class="uk-grid-collapse uk-margin-auto-vertical uk-flex-middle uk-text-center" uk-grid>
 
                         <div class="hero-image uk-width-1-1 uk-width-1-2@m uk-margin-medium-bottom uk-margin-remove-bottom@m">
@@ -18,11 +18,13 @@
                         </div>
 
                         <div class="uk-width-1-1 uk-width-1-2@m uk-flex-first@m uk-text-left@m">
-                            <img src="{{app.logo}}" alt="{{app.title}}" width="148">
-                            <h2 class="uk-heading uk-margin-small-top">
+                            <img src="{{app.logo}}" alt="{{app.title}}" width="148"  data-aos="fade-right">
+                            <h2 class="uk-heading uk-margin-small-top"  data-aos="fade-right" data-aos-delay="100">
                                 Trade Stablecoins Trustlessly
                             </h2>
-                            <a class="uk-button uk-button-primary uk-margin-medium-top">OPEN APP</a>
+                            <div class="uk-margin-medium-top" data-aos="fade-up" data-aos-delay="400">
+                                <a class="uk-button uk-button-primary">OPEN APP</a>                            
+                            </div>
                         </div>
 
                     </div>
@@ -31,21 +33,22 @@
             </div>
         </div>
 
+        <!-- Selection -->
         <div class="uk-section uk-section-secondary uk-padding-medium">
             <div class="uk-container">
                 <div class="uk-flex-middle uk-text-center" uk-grid>
 
                     <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-around uk-width-1-2@m">
-                        <img src="assets/images/usd_coin.png" alt="USDC">
-                        <img src="assets/images/paxo.png" alt="PAXOS">
-                        <img src="assets/images/dai.png" alt="DAI">
+                        <img src="assets/images/usd_coin.png" alt="USDC" data-aos="flip-left" data-aos-delay="800">
+                        <img src="assets/images/paxo.png" alt="PAXOS" data-aos="flip-left" data-aos-delay="900">
+                        <img src="assets/images/dai.png" alt="DAI" data-aos="flip-left" data-aos-delay="1000">
                     </div>
 
                     <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m uk-flex-first@m">
-                        <h2 class="uk-heading">
+                        <h2 class="uk-heading" data-aos="fade-up" data-aos-delay="600">
                             Largest selection of stablecoins 
                         </h2>
-                        <p class="uk-text-large uk-text-muted">
+                        <p class="uk-text-large uk-text-muted" data-aos="fade-up" data-aos-delay="650" data-aos-offset="0">
                             USDC, PAX, DAI 
                         </p>
                     </div>
@@ -62,13 +65,15 @@
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
                 <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-width-1-2@m uk-text-left@m">
-                    <img src="assets/images/currency_icons.png" alt="Currencies" width="40%">
+                    <img src="assets/images/currency_icons.png" alt="Currencies" width="40%" data-aos="flip-right">
                 </div>
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium">Stablecoins in various currencies</h2>
-                    <p class="uk-text-large">USD, Korean Won, SGD and so on</p>
-                    <a href="#" class="uk-button button-gradient">Know More</a>
+                    <h2 class="uk-heading text-medium" data-aos="fade-left">Stablecoins in various currencies</h2>
+                    <p class="uk-text-large" data-aos="fade-left" data-aos-delay="50">USD, Korean Won, SGD and so on</p>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <a href="#" class="uk-button button-gradient">Know More</a>
+                    </div>
                 </div>
 
             </div>
@@ -81,12 +86,12 @@
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
                 <div class="uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-width-1-2@m uk-flex-last@m uk-text-right@m">
-                    <img src="assets/images/metamask_wallet.png" alt="Metamask Wallet" height="80%">
+                    <img src="assets/images/metamask_wallet.png" alt="Metamask Wallet" height="80%" data-aos="zoom-in">
                 </div>
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium">Trade directly from your wallet</h2>
-                    <p class="uk-text-large">Text Content Goes here for the heading aside </p>
+                    <h2 class="uk-heading text-medium" data-aos="fade-right">Trade directly from your wallet</h2>
+                    <p class="uk-text-large" data-aos="fade-right" data-aos-delay="50">Text Content Goes here for the heading aside </p>
                 </div>
 
             </div>
@@ -100,13 +105,16 @@
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
                 <div id="coming-soon-images" class=" uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-flex-left@m uk-width-1-2@m uk-text-left@m">
-                    <img src="assets/images/trezor_image.png" id="trezor-image" alt="Trezor">
-                    <img src="assets/images/ledger.png" id="ledger-image" alt="Ledger">
+                    <img src="assets/images/trezor_image.png" id="trezor-image" alt="Trezor" data-aos="fade-up">
+                    <img src="assets/images/ledger.png" id="ledger-image" alt="Ledger" data-aos="fade-up" data-aos-delay="150">
                 </div>
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium">Coming soon</h2>
-                    <p class="uk-text-large">Ledger and Trezor Integration <br> Leveraged Trading and Shorting</p>
+                    <h2 class="uk-heading text-medium" data-aos="fade-left">Coming soon</h2>
+                    <p class="uk-text-large">
+                        <div class="uk-text-large" data-aos="fade-left" data-aos-delay="50">Ledger and Trezor Integration</div>
+                        <div class="uk-text-large" data-aos="fade-left" data-aos-delay="100">Leveraged Trading and Shorting</div>
+                    </p>
                 </div>
 
             </div>
