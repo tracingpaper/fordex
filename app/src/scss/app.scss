@@ -37,9 +37,7 @@
 //AOS
 @import "../../../node_modules/aos/src/sass/aos.scss";
 
-// Write your custom styles below //
-
-// You can either write the complete code there or
-// Split the styling to modules and import them seperately.
+//preloader
+@import "./components/preloader";
 
 @import "custom";

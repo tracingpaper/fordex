@@ -21,7 +21,7 @@ try {
         offset: 0
     });
 }
-catch(e) {}
+catch(e) { console.log(e) }
 
 //UIKit
 try {

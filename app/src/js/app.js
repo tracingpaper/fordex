@@ -10,3 +10,6 @@ require('./bootstrap');
 * 
 * Use bootstrap.js to require node packages.
 */
+
+//preloader
+require('./plugins/preloader');
