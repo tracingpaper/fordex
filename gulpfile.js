@@ -76,6 +76,9 @@ gulp.task('browserify', function () {
     gutil.log("=> Building js files");
     //browserify
     return browserify(SOURCE.js)
+        //uglify
+        .transform('uglifyify', {global: true})
+        //bundle
         .bundle()
         //Convert to gulp stream
         .pipe(source('app.js'))
