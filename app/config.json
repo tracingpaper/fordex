@@ -16,5 +16,12 @@
     "analytics": {
         "facebookAppId": "000",
         "twitterUsername": "@tracingpaperz"
+    },
+    "links": {
+        "paxos": "https://www.paxos.com/",
+        "usdc": "https://www.circle.com/en/usdc",
+        "krwb": "https://krwb.io/",
+        "dai": "https://makerdao.com/en/dai/",
+        "wyre": "https://www.sendwyre.com/"
     }
 }

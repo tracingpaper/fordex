@@ -7,24 +7,25 @@
         {% include "partials/navbar.partial.njk" %}
 
         <div class="uk-section hero">
-            <img src="assets/images/graph.png" alt="graph" id="graph-image" uk-parallax="y:0,100">
+            <img src="assets/images/hero.png" id="graph-image" uk-parallax="y:0,100">
             <div class="uk-margin-auto-vertical uk-width-1-1">
 
                 <div class="uk-container" uk-parallax="y:0,-50; opacity: 1,0.5">
                     <div class="uk-grid-collapse uk-margin-auto-vertical uk-flex-middle uk-text-center" uk-grid>
 
-                        <div class="hero-image uk-width-1-1 uk-width-1-2@m uk-margin-medium-bottom uk-margin-remove-bottom@m">
+                        {# <div class="hero-image uk-width-1-1 uk-width-1-2@m uk-margin-medium-bottom uk-margin-remove-bottom@m">
                             <img src="assets/images/laptop.png" id="laptop-image" alt="laptop">
-                        </div>
+                        </div> #}
 
-                        <div class="uk-width-1-1 uk-width-1-2@m uk-flex-first@m uk-text-left@m">
+                        <div class="uk-width-1-1 uk-width-1-3@m uk-text-left@m">
                             <img src="{{app.logo}}" alt="{{app.title}}" width="148"  data-aos="fade-right">
-                            <h2 class="uk-heading uk-margin-small-top"  data-aos="fade-right" data-aos-delay="100">
-                                Trade Stablecoins Trustlessly
+                            <h2 class="uk-heading uk-margin-small-bottom"  data-aos="fade-right" data-aos-delay="100">
+                                One Stop Market for Stablecoins
                             </h2>
-                            <div class="uk-margin-medium-top" data-aos="fade-up" data-aos-delay="400">
+                            <p class="uk-text-large uk-margin-remove-top">Buy stablecoins with USD</p>
+                            {# <div class="uk-margin-medium-top" data-aos="fade-up" data-aos-delay="400">
                                 <a class="uk-button uk-button-primary">OPEN APP</a>                            
-                            </div>
+                            </div> #}
                         </div>
 
                     </div>
@@ -38,10 +39,11 @@
             <div class="uk-container">
                 <div class="uk-flex-middle uk-text-center" uk-grid>
 
-                    <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-around uk-width-1-2@m">
-                        <img src="assets/images/usd_coin.png" alt="USDC" data-aos="flip-left" data-aos-delay="800">
-                        <img src="assets/images/paxo.png" alt="PAXOS" data-aos="flip-left" data-aos-delay="900">
-                        <img src="assets/images/dai.png" alt="DAI" data-aos="flip-left" data-aos-delay="1000">
+                    <div class="currency-images uk-width-1-1 uk-flex uk-flex-middle uk-flex-around uk-width-1-2@m" uk-grid>
+                        <a href="{{links.krwb}}"><img src="assets/images/krwb-logo.png" alt="KRWb" data-aos="flip-left" data-aos-delay="700"></a>
+                        <a href="{{links.usdc}}"><img src="assets/images/usd_coin.png" alt="USDC" data-aos="flip-left" data-aos-delay="800"></a>
+                        <a href="{{links.paxos}}"><img src="assets/images/paxo.png" alt="PAXOS" data-aos="flip-left" data-aos-delay="900"></a>
+                        <a href="{{links.dai}}"><img src="assets/images/dai.png" alt="DAI" data-aos="flip-left" data-aos-delay="1000"></a>
                     </div>
 
                     <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m uk-flex-first@m">
@@ -49,7 +51,7 @@
                             Largest selection of stablecoins 
                         </h2>
                         <p class="uk-text-large uk-text-muted" data-aos="fade-up" data-aos-delay="650" data-aos-offset="0">
-                            USDC, PAX, DAI 
+                            USDC, PAX, DAI, KRWb
                         </p>
                     </div>
 
@@ -60,12 +62,14 @@
     </div>
 
     <!-- Currencies -->
-    <div class="uk-section">
+    <div class="uk-section fordex-panel">
         <div class="uk-container">
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
-                <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-width-1-2@m uk-text-left@m">
-                    <img src="assets/images/currency_icons.png" alt="Currencies" width="40%" data-aos="flip-right">
+                <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-middle uk-flex-around">
+                    <img src="assets/images/currency_icons_0.png" data-aos="flip-right" data-aos-delay="100">
+                    <img src="assets/images/currency_icons_2.png" data-aos="flip-right" data-aos-delay="200">
+                    <img src="assets/images/currency_icons_1.png" data-aos="flip-right" data-aos-delay="300">
                 </div>
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
@@ -81,7 +85,7 @@
     </div>
 
     <!-- Wallet -->
-    <div class="uk-section uk-section-muted">
+    <div class="uk-section uk-section-muted fordex-panel">
         <div class="uk-container">
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
@@ -91,7 +95,7 @@
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
                     <h2 class="uk-heading text-medium" data-aos="fade-right">Trade directly from your wallet</h2>
-                    <p class="uk-text-large" data-aos="fade-right" data-aos-delay="50">Text Content Goes here for the heading aside </p>
+                    {# <p class="uk-text-large" data-aos="fade-right" data-aos-delay="50">Text Content Goes here for the heading aside </p> #}
                 </div>
 
             </div>
@@ -100,7 +104,7 @@
 
     <!-- Coming Soon! -->
 
-    <div class="uk-section" id="coming-soon">
+    <div class="uk-section fordex-panel" id="coming-soon">
         <div class="uk-container">
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
@@ -113,10 +117,46 @@
                     <h2 class="uk-heading text-medium" data-aos="fade-left">Coming soon</h2>
                     <p class="uk-text-large">
                         <div class="uk-text-large" data-aos="fade-left" data-aos-delay="50">Ledger and Trezor Integration</div>
-                        <div class="uk-text-large" data-aos="fade-left" data-aos-delay="100">Leveraged Trading and Shorting</div>
+                        {# <div class="uk-text-large" data-aos="fade-left" data-aos-delay="100">Leveraged Trading and Shorting</div> #}
                     </p>
                 </div>
 
+            </div>
+        </div>
+    </div>
+
+    <!-- Coming Soo 2 -->
+
+    <div class="uk-section uk-section-muted fordex-panel">
+        <div class="uk-container">
+            <div class="uk-flex-middle uk-text-center" uk-grid>
+
+                <div class=" uk-width-1-1 uk-width-1-2@m uk-text-left@m uk-flex uk-flex-center uk-flex-last@m">
+                    <img src="assets/images/graph-leveraged.png" id="trezor-image" alt="Trezor" data-aos="fade-up">
+                </div>
+
+                <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
+                    <h2 class="uk-heading text-medium" data-aos="fade-right">Coming soon</h2>
+                    <p class="uk-text-large">
+                        <div class="uk-text-large" data-aos="fade-right" data-aos-delay="50">Leveraged Trading and Shorting</div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Partners -->
+    <div class="uk-section fordex-panel" id="partners">
+        <div class="uk-container uk-text-center">
+            <h2 class="uk-heading">Partners</h2>
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-padding-large">
+                    <img src="assets/images/ox-logo.png" alt="OX">
+                </div>
+                <div class="uk-padding-large">
+                    <a href="{{links.wyre}}"><img src="assets/images/wyre-logo.png" alt="wyre"></a>
+                </div>
             </div>
         </div>
     </div>

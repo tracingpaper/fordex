@@ -13,8 +13,8 @@ require('./bootstrap');
 */
 
 //preloader
-require('./plugins/preloader');
-},{"./bootstrap":2,"./plugins/preloader":3}],2:[function(require,module,exports){
+require('./widgets/preloader');
+},{"./bootstrap":2,"./widgets/preloader":3}],2:[function(require,module,exports){
 // jQuery
 try {
     window.jQuery = window.$ = require('jquery');

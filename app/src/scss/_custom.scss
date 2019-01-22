@@ -15,6 +15,21 @@ body {
     margin: $base-margin-vertical 0;
 }
 
+@media screen and (min-width: $breakpoint-medium) {
+
+    .fordex-panel {
+        height: 400px;
+
+        & > .uk-container {
+            height: 100%;
+
+            & > [uk-grid] {
+                height: 100%;
+            }
+        }
+    }
+}
+
 // HERO 
 .hero {
     flex: 1;
@@ -46,7 +61,11 @@ body {
     #graph-image {
         position: absolute;
         bottom: -20px;
-        right: 25%;
+        left: 0%;
+
+        @media screen and (min-width: $breakpoint-medium) {
+            left: 50%;
+        }
     }
 }
 

@@ -12,4 +12,4 @@ require('./bootstrap');
 */
 
 //preloader
-require('./plugins/preloader');
+require('./widgets/preloader');
