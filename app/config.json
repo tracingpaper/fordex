@@ -4,18 +4,19 @@
         "description": "Trade Stablecoins Trustlessly",
         "keywords": "fordex, stablecoins, trade",
         "url": "localhost:4000",
-        "logo": "/assets/images/logo.svg",
-        "icon": "/assets/icons/icon@192.png",
+        "logo": "assets/images/logo.svg",
+        "icon": "assets/icons/icon@192.png",
         "author": "Tracing Paper"
     },
     "social": {
-        "facebook": "tracingpaperofficial",
-        "instagram": "tracingpaperofficial",
-        "twitter": "tracingpaperz"
+        "medium": "https://satoshiand.co/stablecoinwatch/",
+        "twitter": "https://twitter.com/zenprivex",
+        "telegram": "https://t.me/zpxcommunity",
+        "reddit": "https://www.reddit.com/r/ForDeX/"
     },
     "analytics": {
         "facebookAppId": "000",
-        "twitterUsername": "@tracingpaperz"
+        "twitterUsername": "@zenprivex"
     },
     "links": {
         "paxos": "https://www.paxos.com/",
