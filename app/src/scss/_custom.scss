@@ -37,6 +37,10 @@ body {
     display: flex;
     overflow: hidden;
     position: relative;
+    background-image: url("../assets/images/original.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 
     .uk-heading {
         font-size: 2rem;
