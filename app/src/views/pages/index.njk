@@ -7,7 +7,7 @@
         {% include "partials/navbar.partial.njk" %}
 
         <div class="uk-section hero">
-            {# <img src="assets/images/original.jpg" width="50%" id="graph-image" uk-parallax="y:0,100"> #}
+            <img src="assets/images/hero_v2.png" id="graph-image" uk-parallax="y:0,100">
             <div class="uk-margin-auto-vertical uk-width-1-1">
 
                 <div class="uk-container" uk-parallax="y:0,-50; opacity: 1,0.5">
@@ -23,9 +23,9 @@
                                 One Stop Market for Stablecoins
                             </h2>
                             <p class="uk-text-large uk-margin-remove-top">Buy stablecoins with USD</p>
-                            {# <div class="uk-margin-medium-top" data-aos="fade-up" data-aos-delay="400">
+                            <div class="uk-margin-medium-top" data-aos="fade-up" data-aos-delay="400">
                                 <a href="https://alpha.kovan.fordex.co/trade/USDC-PAX" class="uk-button uk-button-primary">OPEN APP</a>                            
-                            </div> #}
+                            </div>
                         </div>
 
                     </div>
@@ -51,7 +51,7 @@
                             Largest selection of stablecoins 
                         </h2>
                         <p class="uk-text-large uk-text-muted" data-aos="fade-up" data-aos-delay="650" data-aos-offset="0">
-                            USDC, PAX, DAI, KRWb
+                            USDC, PAX, DAI, KRWb and more...
                         </p>
                     </div>
 
@@ -74,7 +74,7 @@
 
                 <div class="uk-width-1-1 uk-margin-large-left uk-width-1-3@m uk-text-left@m">
                     <h2 class="uk-heading text-medium" data-aos="fade-left">Stablecoins in various currencies</h2>
-                    <p class="uk-text-large" data-aos="fade-left" data-aos-delay="50">USD, Korean Won, SGD and so on</p>
+                    <p class="uk-text-large uk-text-justify" data-aos="fade-left" data-aos-delay="50">Build a portfolio and trade across top stablecoin projects representing real currencies including the US Dollar, Korean Won and Singapore Dollar</p>
                     <div data-aos="fade-up" data-aos-delay="400">
                         <a href="#" class="uk-button button-gradient">Know More</a>
                     </div>
@@ -89,13 +89,21 @@
         <div class="uk-container">
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
-                <div class="uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-width-1-2@m uk-flex-last@m uk-text-right@m">
-                    <img src="assets/images/metamask_wallet.png" alt="Metamask Wallet" height="80%" data-aos="zoom-in">
+                <div class="uk-width-1-1 uk-flex uk-flex-around uk-flex-middle uk-width-2-3@m uk-flex-last@m uk-text-right@m">
+                    <div>
+                        <img src="assets/images/metamask_wallet.png" alt="Metamask Wallet" width="80%" data-aos="zoom-in">
+                    </div>
+                    <div>
+                        <img src="assets/images/ledger_wallet.png" alt="Ledger Wallet" width="80%" data-aos="zoom-in" data-aos-delay="100">
+                    </div>
+                    <div>
+                        <img src="assets/images/trezor_wallet.png" alt="Trezor Wallet" width="80%" data-aos="zoom-in" data-aos-delay="200">
+                    </div>
                 </div>
 
-                <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium" data-aos="fade-right">Trade directly from your wallet</h2>
-                    {# <p class="uk-text-large" data-aos="fade-right" data-aos-delay="50">Text Content Goes here for the heading aside </p> #}
+                <div class="uk-width-1-1 uk-width-1-3@m uk-text-left@m">
+                    <h2 class="uk-heading text-medium" data-aos="fade-right">Multi Wallet Support</h2>
+                    <p class="uk-text-large uk-text-justify" data-aos="fade-right" data-aos-delay="50">Directly trade from your choice of wallets without ever giving up custody of your digital assets or trusting a centralized counterparty</p>
                 </div>
 
             </div>
@@ -108,15 +116,14 @@
         <div class="uk-container">
             <div class="uk-flex-middle uk-text-center" uk-grid>
 
-                <div id="coming-soon-images" class=" uk-width-1-1 uk-flex uk-flex-middle uk-flex-center uk-flex-left@m uk-width-1-2@m uk-text-left@m">
-                    <img src="assets/images/trezor_image.png" id="trezor-image" alt="Trezor" data-aos="fade-up">
-                    <img src="assets/images/ledger.png" id="ledger-image" alt="Ledger" data-aos="fade-up" data-aos-delay="150">
+                <div id="coming-soon-images" class=" uk-width-1-1 uk-flex uk-flex-middle uk-flex-start uk-flex-left@m uk-width-2-3@m uk-text-left@m">
+                    <img src="assets/images/fiat.png" alt="convert" data-aos="fade-up">
                 </div>
 
-                <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium" data-aos="fade-left">Coming soon</h2>
+                <div class="uk-width-1-1 uk-width-1-3@m uk-text-left@m">
+                    <h2 class="uk-heading text-medium" data-aos="fade-left">Fiat On-Ramp</h2>
                     <p class="uk-text-large">
-                        <div class="uk-text-large" data-aos="fade-left" data-aos-delay="50">Ledger and Trezor Integration</div>
+                        <div class="uk-text-large uk-text-justify" data-aos="fade-left" data-aos-delay="50">Directly convert your US Dollars into stablecoins to trade your favourite cryptocurrencies</div>
                         {# <div class="uk-text-large" data-aos="fade-left" data-aos-delay="100">Leveraged Trading and Shorting</div> #}
                     </p>
                 </div>
@@ -136,9 +143,9 @@
                 </div>
 
                 <div class="uk-width-1-1 uk-width-1-2@m uk-text-left@m">
-                    <h2 class="uk-heading text-medium" data-aos="fade-right">Coming soon</h2>
+                    <h2 class="uk-heading text-medium" data-aos="fade-right">Leveraged Trading and Shorting</h2>
                     <p class="uk-text-large">
-                        <div class="uk-text-large" data-aos="fade-right" data-aos-delay="50">Leveraged Trading and Shorting</div>
+                        <div class="uk-text-large" data-aos="fade-right" data-aos-delay="50">Use our tools to take leveraged positions on either side of trades in new and upcoming markets</div>
                     </p>
                 </div>
 
@@ -148,14 +155,17 @@
 
     <!-- Partners -->
     <div class="uk-section fordex-panel" id="partners">
-        <div class="uk-container uk-text-center">
-            <h2 class="uk-heading" data-aos="fade-down">Partners</h2>
-            <div class="uk-flex uk-flex-center">
-                <div class="uk-padding-large" data-aos="fade-up">
-                    <img src="assets/images/ox-logo.png" alt="OX">
+        <div class="uk-container">
+            <h2 class="uk-heading uk-text-center" data-aos="fade-down">Partners</h2>
+            <div class="uk-flex uk-flex-center uk-flex-middle">
+                <div class="partner" data-aos="fade-up">
+                    <img src="assets/images/ox-logo.png" height="47px" alt="OX">
                 </div>
-                <div class="uk-padding-large" data-aos="fade-up" data-aos-delay="100">
-                    <a href="{{links.wyre}}"><img src="assets/images/wyre-logo.png" alt="wyre"></a>
+                <div class="partner" data-aos="fade-up" data-aos-delay="100">
+                    <a href="{{links.wyre}}"><img height="48px" src="assets/images/wyre-logo.png" alt="wyre"></a>
+                </div>
+                <div class="partner" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/qcp_capital.png" width="100px" alt="qcp capital">
                 </div>
             </div>
         </div>

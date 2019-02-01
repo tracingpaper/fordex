@@ -10,15 +10,18 @@ body {
 
 .dark-divider {
     background: $dark;
-    width: 75%;
     height: 3px;
     margin: $base-margin-vertical 0;
+
+    @media screen and (min-width: $breakpoint-medium) {
+        width: 75%;        
+    }
 }
 
 @media screen and (min-width: $breakpoint-medium) {
 
     .fordex-panel {
-        height: 400px;
+        height: 350px;
 
         & > .uk-container {
             height: 100%;
@@ -37,10 +40,10 @@ body {
     display: flex;
     overflow: hidden;
     position: relative;
-    background-image: url("../assets/images/original.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
+    // background-image: url("../assets/images/original.jpg");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: right;
 
     .uk-heading {
         font-size: 2rem;
@@ -64,7 +67,7 @@ body {
 
     #graph-image {
         position: absolute;
-        bottom: -20px;
+        // bottom: -20px;
         left: 0%;
 
         @media screen and (min-width: $breakpoint-medium) {
@@ -133,6 +136,27 @@ body {
     }
 
     
+    
+}
+
+.partner {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
+
+    @media screen and (min-width: $breakpoint-medium) {
+
+        padding: 0 4rem;
+        border-left: 3px solid $muted;
+        height: 197px;
+
+        &:first-child {
+            border-left-color: transparent;
+        }
+    }
+
     
 }
 
