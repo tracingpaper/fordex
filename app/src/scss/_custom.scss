@@ -72,6 +72,8 @@ body {
 
         @media screen and (min-width: $breakpoint-medium) {
             left: 50%;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
@@ -84,7 +86,7 @@ body {
         padding: 2.5rem 2px;
 
         @media screen and (min-width: $breakpoint-medium) {
-            border-left: 3px solid $dark;
+            border-left: 1px solid $dark;
         }
     }
 }
@@ -97,7 +99,17 @@ body {
         padding: 2.5rem 2px;
 
         @media screen and (min-width: $breakpoint-medium) {
-            border-right: 3px solid $muted;
+            border-right: 1px solid $muted;
+            height: 197px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5rem;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -149,7 +161,7 @@ body {
     @media screen and (min-width: $breakpoint-medium) {
 
         padding: 0 4rem;
-        border-left: 3px solid $muted;
+        border-left: 1px solid $muted;
         height: 197px;
 
         &:first-child {
@@ -164,7 +176,7 @@ body {
 .footer {
 
     .social {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
 
         .social-link {
             margin: 0 1rem 0 0 ;
