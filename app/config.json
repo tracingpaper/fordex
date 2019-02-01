@@ -1,9 +1,9 @@
 {
     "app": {
         "title": "Fordex",
-        "description": "Trade Stablecoins Trustlessly",
-        "keywords": "fordex, stablecoins, trade",
-        "url": "localhost:4000",
+        "description": "World's first stablecoin exchange built on 0x | Buy cryptocurrencies with US Dollars | Buy, sell and invest in your favorite cryptocurrencies and stablecoins | No custody | Fast Execution",
+        "keywords": "Fordex, crypto foreign exchange, stablecoins, relayer, 0x, stablecoin exchange, cryptocurrencies, KRWb, DAI, USDC, USDT, TUSD, PAX",
+        "url": "www.fordex.co",
         "logo": "assets/images/logo.svg",
         "icon": "assets/icons/icon@192.png",
         "author": "Tracing Paper"
