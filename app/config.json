@@ -23,6 +23,8 @@
         "usdc": "https://www.circle.com/en/usdc",
         "krwb": "https://krwb.io/",
         "dai": "https://makerdao.com/en/dai/",
-        "wyre": "https://www.sendwyre.com/"
+        "wyre": "https://www.sendwyre.com/",
+        "ox": "https://0x.org/",
+        "qcp": "https://qcp.capital/"
     }
 }
